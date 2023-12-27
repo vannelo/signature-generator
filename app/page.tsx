@@ -60,7 +60,7 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h2>Grupo SLP Signature generator</h2>
+      <h2>Signature generator</h2>
       <div className={styles.form}>
         <label htmlFor="name" className={styles.label}>
           Name
@@ -101,16 +101,10 @@ export default function Home() {
           className={styles.signatureHTML}
           dangerouslySetInnerHTML={{ __html: signatureHTML }}
         ></div>
-        <div className={styles.buttons}>
-          <button
-            type="button"
-            className={styles.button}
-            onClick={handleCopyHTML}
-          >
-            Copy
-          </button>
-        </div>
       </div>
+      <p>
+        * Subraya el contenido completo de la caja blanca para copiar la firma
+      </p>
     </main>
   );
 }
