@@ -36,6 +36,7 @@ export default function Home() {
           </a>
         </p>
       </div>
+      <div style="width: 100px; background-color: red">asd</div>
     </div>
   `;
 
