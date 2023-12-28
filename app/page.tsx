@@ -10,11 +10,11 @@ export default function Home() {
   });
 
   const signatureHTML = `
-    <div style="max-width: 450px; background-color: white; font-weight: 600; font-family: Arial, Helvetica, sans-serif;">
-      <div style="display: inline-block; width: 200px; padding: 5px 0">
+    <div style="max-width: 470px; background-color: white; font-weight: 600; font-family: Arial, Helvetica, sans-serif;">
+      <div style="display: inline-block; width: 180px; padding: 5px 0">
         <img src="https://signature-generator-hazel.vercel.app/logo.gif" alt="logo" style="width: 100%;" />
       </div>
-      <div style="display: inline-block; width: 100px; vertical-align: top; padding-top: 30px;">
+      <div style="display: inline-block; width: 120px; vertical-align: top; padding-top: 30px;">
         <p style="font-size: 0.9rem; margin: 0;">${
           formData.name ? formData.name : "Name"
         }</p>
@@ -36,19 +36,11 @@ export default function Home() {
           </a>
         </p>
       </div>
-      <div style="width: 100px; background-color: red">asd</div>
+      <div style="width: 450px">
+        <img src="https://signature-generator-hazel.vercel.app/logos.png" style="width: 100%" />
+      </div>
     </div>
   `;
-
-  const handleCopyHTML = () => {
-    const el = document.createElement("textarea");
-    el.value = signatureHTML;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand("copy");
-    document.body.removeChild(el);
-    alert("HTML copied to clipboard");
-  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
