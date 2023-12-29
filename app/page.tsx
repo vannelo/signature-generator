@@ -37,7 +37,7 @@ export default function Home() {
         </p>
       </div>
       <div style="width: 450px">
-        <img src="https://signature-generator-hazel.vercel.app/logos.png" style="width: 100%" />
+        <img src="https://signature-generator-hazel.vercel.app/logos2.png" style="width: 100%" />
       </div>
     </div>
   `;
