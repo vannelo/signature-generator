@@ -11,10 +11,10 @@ export default function Home() {
 
   const signatureHTML = `
     <div style="max-width: 470px; background-color: white; font-weight: 600; font-family: Arial, Helvetica, sans-serif;">
-      <div style="display: inline-block; width: 180px; padding: 5px 0">
+      <div style="display: inline-block; width: 160px; padding: 5px 0">
         <img src="https://signature-generator-hazel.vercel.app/logo.gif" alt="logo" style="width: 100%;" />
       </div>
-      <div style="display: inline-block; width: 120px; vertical-align: top; padding-top: 30px;">
+      <div style="display: inline-block; width: 140px; vertical-align: top; padding-top: 30px;">
         <p style="font-size: 0.9rem; margin: 0;">${
           formData.name ? formData.name : "Name"
         }</p>
@@ -36,7 +36,7 @@ export default function Home() {
           </a>
         </p>
       </div>
-      <div style="width: 450px">
+      <div style="width: 400px">
         <img src="https://signature-generator-hazel.vercel.app/logos2.png" style="width: 100%" />
       </div>
     </div>
